@@ -8,3 +8,9 @@ services:
       - ./stardog-home/:/var/opt/stardog
     stdin_open: true
     tty: true
+  studio:
+    image: stardog/stardog-studio:current
+    ports:
+      - "8888:8080"
+    depends_on:
+      - "stardog"
