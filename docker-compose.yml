@@ -1,0 +1,10 @@
+version: '3'
+services:
+  stardog:
+    image: stardog/stardog
+    ports:
+      - "5280:5280"
+    volumes:
+      - ./stardog-home/:/var/opt/stardog
+    stdin_open: true
+    tty: true
