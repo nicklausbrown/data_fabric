@@ -1,6 +1,7 @@
 # license key / stardog output
 *stardog-license*
 stardog-home/*
+!stardog-home/.gitkeep
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
